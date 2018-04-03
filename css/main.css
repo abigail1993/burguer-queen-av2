@@ -1,0 +1,28 @@
+#container {
+    background-image: url("../assets/images/background-menu.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: auto;
+    width: 100%;
+}
+
+#logo {
+    font-family: 'Rammetto One', cursive;
+    color: brown;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+
+}
+
+.table-bordered {
+    background-color: white !important;
+}
+
+#titulo {
+    color: brown;
+    text-align: center;
+}
