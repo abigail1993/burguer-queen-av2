@@ -13,6 +13,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "compile": "./node_modules/.bin/watchify js/app.js -o bundle.js -t [ babelify --presets [ es2015 react ] ] "
+    "compile": "./node_modules/.bin/browserify js/app.js -o public/index.js -t [ babelify --presets [ es2015 react ] ] "
   }
 }
