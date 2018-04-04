@@ -8,21 +8,49 @@
 }
 
 #logo {
-    font-family: 'Rammetto One', cursive;
+    background-color: white;
+    border-radius: 5px;
     color: brown;
+    font-family: 'Rammetto One', cursive;
+    margin-top: 15px;
+    padding: 10px;
     text-align: center;
+
+}
+
+#titulo {
+    color: white;
+    text-align: center;
+}
+
+#pedido {
+    background-color: white;
+    height: 500px;
+}
+
+#background-titulo {
+    background-color: rgb(151, 54, 67);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#total {
     background-color: white;
     padding: 10px;
-    margin-top: 15px;
-    border-radius: 5px;
-
 }
 
 .table-bordered {
     background-color: white !important;
 }
 
-#titulo {
-    color: brown;
-    text-align: center;
+.m-b-30 {
+    margin-bottom: 30px;
+}
+
+.nav-item {
+    margin: 8px;
+}
+
+.nav-pills .nav-link {
+    font-size: 12px !important;
 }

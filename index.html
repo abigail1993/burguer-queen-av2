@@ -13,11 +13,19 @@
    <div id="container-react"></div>
     <!--<section class="container-fluid">
         <div id="container">
-            <div class="col-md-6 offset-md-3">
+          <!--Contenedor logo-->
+          <div class="row">
+            <div class="col-md-6 offset-md-3 col-sm-6 offset-sm-3 m-b-30">
                <h1 id="logo">Burguer Queen</h1>
             </div>
-            <div class="col-md-7">
-                    <h1 id="titulo">Desayuno</h1>
+          </div>
+          <!--Contenedor desayuno-->
+          <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-8">
+                <div id="background-titulo">
+                    <h2 id="titulo">Desayuno</h2>
+                  </div>
                     <table class="table table-bordered">
                       <thead>
                         <tr>
@@ -51,8 +59,11 @@
                     </table>
 
 
-                  <div class="">
-                    <h1 id="titulo">Comida</h1>
+              <!--Contenedor comida-->
+              <div id="background-titulo">
+                  <h2 id="titulo">Comida</h2>
+                </div>
+
                     <table class="table table-bordered">
                       <thead>
                         <tr>
@@ -149,11 +160,38 @@
                         </tr>
                       </tbody>
                     </table>
-                  </div>
-        </div>
-    </div>
-  </section>-->
 
+            </div> <!--termina columna 8-->
+             <!--Contenedor pedido-->
+             <div class="col-md-4 col-sm-4">
+                <div id="background-titulo">
+                  <h2 id="titulo">Pedido</h2>
+                </div>
+                  <div id="pedido">
+                  <ul class="nav nav-pills">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">Cliente 1</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Cliente 2</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Cliente 3</a>
+                      </li>
+                    </ul>
+                </div>
+                <div id="total">
+                  <h4>TOTAL: $</h4>
+                </div>
+                <div>
+                <button type="button" class="btn btn-danger">Generar Ticket</button>
+              </div>
+            </div> <!--Termina columna 4-->
+          </div> <!--Termina row -->
+        </div> <!--Termina container del menu -->
+        </div> <!--Termina container de la imagen -->
+    </section>
+    
     <script src="public/index.html"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
