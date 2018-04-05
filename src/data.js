@@ -27,13 +27,13 @@ const data = {
             { alimento: "Gaseosa", precio: 7 }
         ],
         Extras: [
-            { alimento: "Huevo", precio: 1 },
-            { alimento: "Queso", precio: 1 }
+            { alimento: "Huevo", precio: 2 },
+            { alimento: "Queso", precio: 2 }
         ]
     }
 }
 console.log("desayuno", data.Desayuno);
 console.log(data.Titles[0]);
-console.log(data.Complementos. alimentos[0]);
+//console.log(data.Complementos. alimentos[0]);
 
 export default data;
