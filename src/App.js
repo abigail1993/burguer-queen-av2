@@ -16,19 +16,19 @@ import './App.css';
   render() {
     return (
       <section>
-        <div className="container">
+        <div className="App-container">
           <div className="row">
             <div className="col-md-6 offset-md-3 col-sm-6 offset-sm-3 m-b-30">
-               <h1 className="logo">{data.nameRestaurant}</h1>
+               <h1 className="App-logo">{data.nameRestaurant}</h1>
             </div>
           </div>
-          <div className="container">
+          <div className="App-container">
           <div className="row">
             <div className="col-md-8 col-sm-8">
-                <div className="background-titulo">
-                    <h2 className="titulo">{data.Titles[0]}</h2>
+                <div className="App-background-titulo">
+                    <h2 className="App-titulo">{data.Titles[0]}</h2>
                   </div>
-                    <table className="table table-bordered">
+                    <table className="table App-table-bordered">
 
                       <thead>
                         <tr>
@@ -64,11 +64,11 @@ import './App.css';
                     </table>
 
 
-              <div className="background-titulo">
-                  <h2 className="titulo">{data.Titles[1]}</h2>
+              <div className="App-background-titulo">
+                  <h2 className="App-titulo">{data.Titles[1]}</h2>
                 </div>
 
-                    <table className="table table-bordered">
+                    <table className="table App-table-bordered">
                       <thead>
                         <tr>
                           <th scope="col">Hamburguesa</th>
@@ -102,7 +102,7 @@ import './App.css';
                     </table>
 
 
-                    <table className="table table-bordered">
+                    <table className="table App-table-bordered">
 
                       <thead>
                         <tr>
@@ -127,7 +127,7 @@ import './App.css';
                     </table>
 
 
-                    <table className="table table-bordered">
+                    <table className="table App-table-bordered">
                       <thead>
                         <tr>
                           <th scope="col">Complementos</th>
@@ -152,7 +152,7 @@ import './App.css';
                     </table>
 
 
-                    <table className="table table-bordered">
+                    <table className="table App-table-bordered">
                       <thead>
                         <tr>
                           <th scope="col">Bebidas</th>
@@ -179,10 +179,10 @@ import './App.css';
 
             </div>
              <div className="col-md-4 col-sm-4">
-                <div className="background-titulo">
-                  <h2 className="titulo"></h2>
+                <div className="App-background-titulo">
+                  <h2 className="App-titulo">Pedido</h2>
                 </div>
-                  <div className="pedclassNameo">
+                  <div className="App-pedido">
 
                   <ul className="nav nav-pills">
                       <li className="nav-item">
@@ -197,7 +197,7 @@ import './App.css';
                     </ul>
                 </div>
 
-                <div className="total">
+                <div className="App-total">
 
                   <h4>TOTAL: $</h4>
                 </div>
