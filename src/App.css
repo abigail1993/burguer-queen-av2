@@ -22,7 +22,67 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
+/*@keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+*/
+
+
+.App-container {
+  background-image: url("background-menu.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: auto;
+  width: 100%;
+}
+
+.App-logo {
+  background-color: white;
+  border-radius: 5px;
+  color: brown;
+  font-family: 'Rammetto One', cursive;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+
+}
+
+.App-titulo {
+  color: white;
+  text-align: center;
+}
+
+.App-pedido {
+  background-color: white;
+  height: 500px;
+}
+
+.App-background-titulo {
+  background-color: rgb(151, 54, 67);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.App-total {
+  background-color: white;
+  padding: 10px;
+}
+
+.App-table-bordered {
+  background-color: white !important;
+}
+
+.App-m-b-30 {
+  margin-bottom: 30px;
+}
+
+.App-nav-item {
+  margin: 8px;
+}
+
+.App-nav-pills .nav-link {
+  font-size: 12px !important;
+}
+
