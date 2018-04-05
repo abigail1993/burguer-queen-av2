@@ -1,9 +1,13 @@
 import React, { Component } from "react";
 //import ReactDOM from "react-dom";
+
 import data from "./data.js";
+
 //import Button from "./Button.js"
 import 'bootstrap/dist/css/bootstrap.min.css';
 //import { Button } from 'reactstrap';
+import './App.css';
+
 
 
 
@@ -25,6 +29,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                     <h2 className="titulo">{data.Titles[0]}</h2>
                   </div>
                     <table className="table table-bordered">
+
                       <thead>
                         <tr>
                           <th scope="col">Productos</th>
@@ -34,6 +39,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                       </thead>
                       <tbody>
                         <tr>
+
                           <th scope="row">{data.Desayuno[0].alimento}</th>
                           <td>${data.Desayuno[0].precio}</td>
                           <td><button type="button" className="btn btn-success">Agregar</button></td>
@@ -51,6 +57,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                         <tr>
                           <th scope="row">{data.Desayuno[3].alimento}</th>
                           <td>{data.Desayuno[3].precio}</td>
+
                           <td><button type="button" className="btn btn-success">Agregar</button></td>
                         </tr>
                       </tbody>
@@ -65,6 +72,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                       <thead>
                         <tr>
                           <th scope="col">Hamburguesa</th>
+
                           <th scope="col">Precio Sencilla</th>
                           <th scope="col">Precio Doble</th>
                           <th scope="col">Agregar</th>
@@ -87,12 +95,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                           <th scope="row">{data.Comida.Hamburguesas[2].proteina}</th>
                           <td>${data.Comida.Hamburguesas[2].precioSencilla}</td>
                           <td>${data.Comida.Hamburguesas[2].precioDoble}</td>
+
                           <td><button type="button" className="btn btn-success">Sencilla</button> <button type="button" className="btn btn-success">Doble</button></td>
                         </tr>
                        </tbody>
                     </table>
 
+
                     <table className="table table-bordered">
+
                       <thead>
                         <tr>
                           <th scope="col">Ingrediente Extra</th>
@@ -109,10 +120,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                         <tr>
                           <th scope="row">{data.Comida.Extras[1].alimento}</th>
                           <td>${data.Comida.Extras[1].precio}</td>
+
                           <td><button type="button" className="btn btn-success">Agregar</button> </td>
                         </tr>
                       </tbody>
                     </table>
+
 
                     <table className="table table-bordered">
                       <thead>
@@ -124,6 +137,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                       </thead>
                       <tbody>
                         <tr>
+
                           <th scope="row">{data.Comida.Complementos[0].alimento}</th>
                           <td>$ {data.Comida.Complementos[0].precio}</td>
                           <td><button type="button" className="btn btn-success">Sencilla</button> </td>
@@ -131,21 +145,25 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                         <tr>
                           <th scope="row">{data.Comida.Complementos[1].alimento}</th>
                           <td>$ {data.Comida.Complementos[1].precio}</td>
+
                           <td><button type="button" className="btn btn-success">Sencilla</button> </td>
                         </tr>
                       </tbody>
                     </table>
 
+
                     <table className="table table-bordered">
                       <thead>
                         <tr>
                           <th scope="col">Bebidas</th>
+
                           <th scope="col">Precio</th>
                           <th scope="col">Agregar</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
+
                           <th scope="row">{data.Comida.Bebidas[0].alimento}</th>
                           <td>$ {data.Comida.Bebidas[0].precio}</td>
                           <td><button type="button" className="btn btn-success">Agregar</button> </td>
@@ -153,6 +171,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                         <tr>
                           <th scope="row">{data.Comida.Bebidas[1].alimento}</th>
                           <td>$ {data.Comida.Bebidas[1].precio}</td>
+
                           <td><button type="button" className="btn btn-success">Agregar</button> </td>
                         </tr>
                       </tbody>
@@ -164,6 +183,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                   <h2 className="titulo"></h2>
                 </div>
                   <div className="pedclassNameo">
+
                   <ul className="nav nav-pills">
                       <li className="nav-item">
                         <a className="nav-link active" href="">Cliente 1</a>
@@ -176,16 +196,20 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                       </li>
                     </ul>
                 </div>
+
                 <div className="total">
+
                   <h4>TOTAL: $</h4>
                 </div>
                 <div>
                 <button type="button" className="btn btn-danger">Generar Ticket</button>
               </div>
+
             </div>
           </div>
         </div>
         </div>
+
       </section>
    );
   }
