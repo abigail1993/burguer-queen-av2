@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 //import ReactDOM from "react-dom";
 //import data from "./Data.js";
-import Button from "./Button.js"
+//import Button from "./Button.js"
 import 'bootstrap/dist/css/bootstrap.min.css';
 //import { Button } from 'reactstrap';
+import './App.css';
 
 
 
@@ -12,19 +13,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
   render() {
     return (
       <section>
-        <div id="container">
-          <div class="row">
-            <div class="col-md-6 offset-md-3 col-sm-6 offset-sm-3 m-b-30">
-               <h1 id="logo">Burguer Queen</h1>
+        <div className="App-container">
+          <div className="row">
+            <div className="col-md-6 offset-md-3 col-sm-6 offset-sm-3 m-b-30">
+               <h1 className="App-logo">Burguer Queen</h1>
             </div>
           </div>
-          <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-sm-8">
-                <div id="background-titulo">
-                    <h2 id="titulo">Desayuno</h2>
+          <div className="App-container">
+          <div className="row">
+            <div className="col-md-8 col-sm-8">
+                <div className="App-background-titulo">
+                    <h2 className="App-titulo">Desayuno</h2>
                   </div>
-                    <table class="table table-bordered">
+                    <table className="table App-table-bordered">
                       <thead>
                         <tr>
                           <th scope="col">Productos</th>
@@ -36,32 +37,32 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                         <tr>
                           <th scope="row">Cafe Americano</th>
                           <td>$ 5</td>
-                          <td><button type="button" class="btn btn-success">Agregar</button></td>
+                          <td><button type="button" className="btn btn-success">Agregar</button></td>
                         </tr>
                         <tr>
                           <th scope="row">Cafe con leche</th>
                           <td>$ 7</td>
-                          <td><button type="button" class="btn btn-success">Agregar</button></td>
+                          <td><button type="button" className="btn btn-success">Agregar</button></td>
                         </tr>
                         <tr>
                           <th scope="row">Sandwich de jamón y queso</th>
                           <td>$ 10</td>
-                          <td><button type="button" class="btn btn-success">Agregar</button></td>
+                          <td><button type="button" className="btn btn-success">Agregar</button></td>
                         </tr>
                         <tr>
                           <th scope="row">Jugo naturaL</th>
                           <td>$ 7</td>
-                          <td><button type="button" class="btn btn-success">Agregar</button></td>
+                          <td><button type="button" className="btn btn-success">Agregar</button></td>
                         </tr>
                       </tbody>
                     </table>
 
 
-              <div id="background-titulo">
-                  <h2 id="titulo">Comida</h2>
+              <div className="App-background-titulo">
+                  <h2 className="App-titulo">Comida</h2>
                 </div>
 
-                    <table class="table table-bordered">
+                    <table className="table App-table-bordered">
                       <thead>
                         <tr>
                           <th scope="col">Hamburguesas</th>
@@ -75,24 +76,24 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                           <th scope="row">Pollo</th>
                           <td>$ 10</td>
                           <td>$ 15</td>
-                          <td><button type="button" class="btn btn-success">Sencilla</button> <button type="button" class="btn btn-success">Doble</button></td>
+                          <td><button type="button" className="btn btn-success">Sencilla</button> <button type="button" className="btn btn-success">Doble</button></td>
                         </tr>
                         <tr>
                           <th scope="row">Res</th>
                           <td>$ 10</td>
                           <td>$ 15</td>
-                          <td><button type="button" class="btn btn-success">Sencilla</button> <button type="button" class="btn btn-success">Doble</button></td>
+                          <td><button type="button" className="btn btn-success">Sencilla</button> <button type="button" className="btn btn-success">Doble</button></td>
                         </tr>
                         <tr>
                           <th scope="row">Vegetariana</th>
                           <td>$ 10</td>
                           <td>$ 15</td>
-                          <td><button type="button" class="btn btn-success">Sencilla</button> <button type="button" class="btn btn-success">Doble</button></td>
+                          <td><button type="button" className="btn btn-success">Sencilla</button> <button type="button" className="btn btn-success">Doble</button></td>
                         </tr>
                        </tbody>
                     </table>
 
-                    <table class="table table-bordered">
+                    <table className="table App-table-bordered">
                       <thead>
                         <tr>
                           <th scope="col">Ingrediente Extra</th>
@@ -104,17 +105,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                         <tr>
                           <th scope="row">Huevo</th>
                           <td>$ 10</td>
-                          <td><button type="button" class="btn btn-success">Agregar</button> </td>
+                          <td><button type="button" className="btn btn-success">Agregar</button> </td>
                         </tr>
                         <tr>
                           <th scope="row">Queso</th>
                           <td>$ 10</td>
-                          <td><button type="button" class="btn btn-success">Agregar</button> </td>
+                          <td><button type="button" className="btn btn-success">Agregar</button> </td>
                         </tr>
                       </tbody>
                     </table>
 
-                    <table class="table table-bordered">
+                    <table className="table App-table-bordered">
                       <thead>
                         <tr>
                           <th scope="col">Complementos</th>
@@ -126,17 +127,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                         <tr>
                           <th scope="row">Papas Fritas</th>
                           <td>$ 10</td>
-                          <td><button type="button" class="btn btn-success">Sencilla</button> </td>
+                          <td><button type="button" className="btn btn-success">Sencilla</button> </td>
                         </tr>
                         <tr>
                           <th scope="row">Onion Rings</th>
                           <td>$ 10</td>
-                          <td><button type="button" class="btn btn-success">Sencilla</button> </td>
+                          <td><button type="button" className="btn btn-success">Sencilla</button> </td>
                         </tr>
                       </tbody>
                     </table>
 
-                    <table class="table table-bordered">
+                    <table className="table App-table-bordered">
                       <thead>
                         <tr>
                           <th scope="col">Bebida</th>
@@ -148,39 +149,38 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                         <tr>
                           <th scope="row">Agua</th>
                           <td>$ 10</td>
-                          <td><button type="button" class="btn btn-success">Agregar</button> </td>
+                          <td><button type="button" className="btn btn-success">Agregar</button> </td>
                         </tr>
                         <tr>
                           <th scope="row">Gaseosa</th>
                           <td>$ 10</td>
-                          <td><button type="button" class="btn btn-success">Agregar</button> </td>
+                          <td><button type="button" className="btn btn-success">Agregar</button> </td>
                         </tr>
                       </tbody>
                     </table>
-
             </div> 
-             <div class="col-md-4 col-sm-4">
-                <div id="background-titulo">
-                  <h2 id="titulo">Pedido</h2>
+             <div className="col-md-4 col-sm-4">
+                <div className="App-background-titulo">
+                  <h2 className="App-titulo">Pedido</h2>
                 </div>
-                  <div id="pedido">
-                  <ul class="nav nav-pills">
-                      <li class="nav-item">
-                        <a class="nav-link active" href="#">Cliente 1</a>
+                  <div className="App-pedido">
+                  <ul className="nav nav-pills">
+                      <li className="nav-item">
+                        <a className="nav-link active" href="">Cliente 1</a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Cliente 2</a>
+                      <li className="nav-item">
+                        <a className="nav-link disabled" href="">Cliente 2</a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Cliente 3</a>
+                      <li className="nav-item">
+                        <a className="nav-link disabled" href="">Cliente 3</a>
                       </li>
                     </ul>
                 </div>
-                <div id="total">
+                <div className="App-total">
                   <h4>TOTAL: $</h4>
                 </div>
                 <div>
-                <button type="button" class="btn btn-danger">Generar Ticket</button>
+                <button type="button" className="btn btn-danger">Generar Ticket</button>
               </div>
             </div> 
           </div> 
