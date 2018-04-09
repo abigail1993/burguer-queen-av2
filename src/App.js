@@ -10,9 +10,7 @@ import './App.css';
 
  class App extends React.Component {
 
-}
-
-  render() {
+  render () {
     return (
       <section>
         <div className="App-container">
@@ -38,14 +36,13 @@ import './App.css';
                       </thead>
                       <tbody>
                         <tr>
-
-                          <th scope="row">{data.Desayuno[0].alimento}</th>
-                          <td>${data.Desayuno[0].precio}</td>
-                          <td><button type="button" className="btn btn-success">Agregar</button></td>
+                          <th scope="row" dataname={data.Desayuno[0].alimento}>{data.Desayuno[0].alimento}</th>
+                          <td data-name={data.Desayuno[0].precio}>${data.Desayuno[0].precio}</td>
+                          <td><button type="button" data-name={data.Desayuno[0].alimento} data-precio={data.Desayuno[0].precio} onClick={this.handleClick} className="btn btn-success">Agregar</button></td>
                         </tr>
                         <tr>
-                          <th scope="row">{data.Desayuno[1].alimento}</th>
-                          <td>${data.Desayuno[1].precio}</td>
+                          <th scope="row" data-name={data.Desayuno[1].alimento}>{data.Desayuno[1].alimento}</th>
+                          <td data-name={data.Desayuno[1].precio}>${data.Desayuno[1].precio}</td>
                           <td><button type="button" className="btn btn-success">Agregar</button></td>
                         </tr>
                         <tr>
