@@ -12,27 +12,18 @@ import './App.css';
  class App extends React.Component {
    constructor(props){
      super( );
-     this.state={
-       data : []
-     }
-     this.handleClick  = this.handleClick.bind(this)
-
+     this.state = { product: data.Desayuno[0].precio }
    }
 
   
-   handleClick(event)
-   {
-    //console.log(event)
-     //let objeto= {
-      // dataName:dataname.target.innerText,
-     //}
-     //this.setState({data: [objeto].concat(this.state.dataname) })
+   handleClick(event){
+     this.setState({
+       product: this.state.product
+     })
+
      console.log(event.target.dataset.name);
      console.log(event.target.dataset.precio);
-
-    /* let compraProducto = event.target.dataset.name; esto es por si quiero cambiarlo
-     let precioCompra =event.target.dataset.precio;
-     let pedido = compraProducto+precioCompra; */ 
+     console.log(this)
    }
 
    
@@ -65,7 +56,7 @@ import './App.css';
                         <tr>
                           <th scope="row" dataname={data.Desayuno[0].alimento}>{data.Desayuno[0].alimento}</th>
                           <td data-name={data.Desayuno[0].precio}>${data.Desayuno[0].precio}</td>
-                          <td><button type="button" data-name={data.Desayuno[0].alimento} data-precio={data.Desayuno[0].precio} onClick={this.handleClick} className="btn btn-success">Agregar</button></td>
+                          <td><button type="button" data-name={data.Desayuno[0].alimento} data-precio={data.Desayuno[0].precio} onClick={this.handleClick.bind(this)} className="btn btn-success">Agregar</button></td>
                         </tr>
                         <tr>
                           <th scope="row" data-name={data.Desayuno[1].alimento}>{data.Desayuno[1].alimento}</th>
