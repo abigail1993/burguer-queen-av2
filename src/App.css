@@ -7,6 +7,17 @@
   height: 80px;
 }
 
+.App-estilo {
+  background-color: rgb(151, 54, 67);
+  border: 1px solid  rgb(151, 54, 67);
+  color: white;
+  font-size: 40px;
+}
+
+.App-borde {
+  margin: 0px;
+}
+
 .App-header {
   background-color: #222;
   height: 150px;
