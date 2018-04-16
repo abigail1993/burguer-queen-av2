@@ -13,8 +13,8 @@ import Inicio from "./components/Inicio";
 import {Link, Switch, Route} from "react-router-dom";
 
 class App extends Component{
-  constructor(){
-    super()
+  constructor(props){
+    super(props)
     this.state = {
       products: [{id: 1, alimento: "Café americano", precio: 5, cantidad: 0},
         { id: 2, alimento: "Café con leche", precio: 7, cantidad: 0 },
@@ -30,10 +30,21 @@ class App extends Component{
         { id: 12, alimento: "Huevo", precio: 2, cantidad: 0 },
         { id: 13, alimento: "Queso", precio: 2, cantidad: 0 }
       ]}
+    //this.addProduct = this.addProduct.bind(this);
+  }
+
+  addProduct() {
+    // this.setState({
+    //   product: products
+    // })
+    console.log("si entra")
+    //let products = this.setState.products
   }
 
   componentWillMount(){
     //aqui talvez iria la data 
+    
+    console.log(this.state.products);
 
   }
 
@@ -60,11 +71,10 @@ class App extends Component{
             </div>
           </div>
         </div>
-      
 
         <Switch>
           <Route path="/Inicio" exact component={Inicio}></Route>
-          <Route path="/Desayuno" exact component={Desayuno}></Route>
+          <Route path="/Desayuno" exact component={Desayuno} product={this.state.product} clicked={this.addProduct}></Route>
           <Route path="/Comida" exact component={Comida}></Route>
 
         </Switch>

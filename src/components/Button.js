@@ -5,19 +5,16 @@ import React, {Component} from "react";
 
 class Button extends Component {
    // console.log("holaaaa")
-   constructor () {
-       super ()
-       this.addProduct = this.addProduct.bind(this);
+   constructor (props) {
+       super (props)
+       //this.addProduct = this.addProduct.bind(this);
    }
-    addProduct (event) {
-        let products = this.setState.products
-    }
 
    render(){
     return (<div>
-        <button type="button" class="btn btn-success" onclick={this.addProduct}>Agregar</button>
-        <input type="password" class="form-control" id="inputPassword2" placeholder="0"/>
-        <button type="button" class="btn btn-danger" onclick={this.addProduct}>Quitar</button></div>)
+        <button type="button" className="btn btn-success" onClick={this.props.click}>Agregar</button>
+        <input type="password" className="form-control" id="inputPassword2" placeholder="0"/>
+        <button type="button" className="btn btn-danger" onClick={this.removeProduct}>Quitar</button></div>)
  }
 }
 
