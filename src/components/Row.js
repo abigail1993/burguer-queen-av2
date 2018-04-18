@@ -6,7 +6,7 @@ import Button from "./Button.js"
     return(<tr>
         <th scope="row"></th>
         <td></td>
-        <td><button type="button" className="btn btn-success">Agregar</button></td>
+        <td><Button click={this.props.clicked} /></td>
       </tr>)
     }
 }

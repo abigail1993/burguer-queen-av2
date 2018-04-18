@@ -16,6 +16,7 @@ class App extends Component{
   constructor(props){
     super(props)
     this.state = {
+      pedido:[],
       products: [{id: 1, alimento: "Café americano", precio: 5, cantidad: 0},
         { id: 2, alimento: "Café con leche", precio: 7, cantidad: 0 },
         { id: 3, alimento: "Sándwich de jamón y queso", precio: 10, cantidad: 0 },
@@ -74,7 +75,7 @@ class App extends Component{
 
         <Switch>
           <Route path="/Inicio" exact component={Inicio}></Route>
-          <Route path="/Desayuno" exact component={Desayuno} product={this.state.product} clicked={this.addProduct}></Route>
+          <Route path="/Desayuno" exact component= {() => ( <Desayuno product={this.state.product} />) } />
           <Route path="/Comida" exact component={Comida}></Route>
 
         </Switch>
