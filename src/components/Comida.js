@@ -5,9 +5,8 @@ import data from "./../data"
 
 
 class Comida extends Component {
-  constructor (product){
-    super(product)
-    console.log(product)
+  constructor (props){
+    super(props)
   }
 
 
@@ -28,100 +27,19 @@ class Comida extends Component {
                       </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                          <th scope="row">{data.Comida.Hamburguesas[0].proteina}</th>
-                          <td>${data.Comida.Hamburguesas[0].precioSencilla}</td>
-                          <td>${data.Comida.Hamburguesas[1].precioDoble}</td>
-                          <td><Button /></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">{data.Comida.Hamburguesas[1].proteina}</th>
-                          <td>${data.Comida.Hamburguesas[0].precioSencilla}</td>
-                          <td>${data.Comida.Hamburguesas[1].precioDoble}</td>
-                          <td><Button /></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">{data.Comida.Hamburguesas[2].proteina}</th>
-                          <td>${data.Comida.Hamburguesas[0].precioSencilla}</td>
-                          <td>${data.Comida.Hamburguesas[1].precioDoble}</td>
-                          <td><Button /></td>
-                        </tr>
+                    {this.props.product.map((item)=>{
+                        console.log(item)
+                        return (
+                          <tr>
+                        <th scope="row">{item.alimento}</th>
+                        <td>{item.precio}</td>
+                        <button type="button" className="btn btn-success">Agregar</button>
+                        <input type="password" className="form-control" id="inputPassword2" placeholder="0"/>
+                        <button type="button" className="btn btn-danger" onClick={this.removeProduct}>Quitar</button>
+                      </tr>
+                        )
+                      })}
                        </tbody>
-                    </table>
-
-
-                    <table className="table App-table-bordered">
-
-                      <thead>
-                        <tr>
-                          <th scope="col">Ingrediente Extra</th>
-                          <th scope="col">Precio</th>
-                          <th scope="col">Agregar</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">{data.Comida.Extras[0].alimento}</th>
-                          <td>${data.Comida.Extras[0].precio}</td>
-                          <td><Button /></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">{data.Comida.Extras[1].alimento}</th>
-                          <td>${data.Comida.Extras[0].precio}</td>
-                          <td><Button /></td>
-                        </tr>
-                      </tbody>
-                    </table>
-
-
-                    <table className="table App-table-bordered">
-
-                      <thead>
-                        <tr>
-                          <th scope="col">Ingrediente Extra</th>
-                          <th scope="col">Precio</th>
-                          <th scope="col">Agregar</th>
-                        </tr>
-                      </thead>
-
-                    <tbody>
-                        <tr>
-
-                          <th scope="row">{data.Comida.Complementos[0].alimento}</th>
-                          <td>$ {data.Comida.Complementos[0].precio}</td>
-                          <td><Button /></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">{data.Comida.Complementos[1].alimento}</th>
-                          <td>$ {data.Comida.Complementos[1].precio}</td>
-                          <td><Button /></td>
-                        </tr>
-                      </tbody>
-                    </table>
-
-
-                    <table className="table App-table-bordered">
-                      <thead>
-                        <tr>
-                          <th scope="col">Bebidas</th>
-
-                          <th scope="col">Precio</th>
-                          <th scope="col">Agregar</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-
-                          <th scope="row">{data.Comida.Bebidas[0].alimento}</th>
-                          <td>$ {data.Comida.Bebidas[0].precio}</td>
-                          <td><Button /></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">{data.Comida.Bebidas[1].alimento}</th>
-                          <td>$ {data.Comida.Bebidas[1].precio}</td>
-                          <td><Button /></td>
-                        </tr>
-                      </tbody>
                     </table>
               </div>
               <Order />
