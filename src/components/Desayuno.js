@@ -5,14 +5,15 @@ import data from "./../data"
 
 
 class Desayuno extends Component {
-  constructor (){
-    super()
+  constructor (props){
+    super(props)
     this.addCount = this.addCount.bind(this)
   }
 
 
     render(){
-      
+      console.log(this.props.product)
+
         return (<div className="App-container">
           <div className="row">
             <div className="col-md-8 col-sm-8">
@@ -28,28 +29,18 @@ class Desayuno extends Component {
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <th scope="row" dataname={data.Desayuno[0].alimento}>{data.Desayuno[0].alimento}</th>
-                        <td data-name={data.Desayuno[0].precio}>${data.Desayuno[0].precio}</td>
+                      {this.props.product.map((item)=>{
+                        console.log(item)
+                        return (
+                          <tr>
+                        <th scope="row">{item.alimento}</th>
+                        <td>{item.precio}</td>
                         <button type="button" className="btn btn-success" onClick={ () => {this.addCount()}}>Agregar</button>
                         <input type="password" className="form-control" id="inputPassword2" placeholder="0"/>
                         <button type="button" className="btn btn-danger" onClick={this.removeProduct}>Quitar</button>
                       </tr>
-                      <tr>
-                        <th scope="row" dataname={data.Desayuno[1].alimento}>{data.Desayuno[1].alimento}</th>
-                          <td data-name={data.Desayuno[1].precio}>${data.Desayuno[1].precio}</td>
-                          <td><Button /></td>
-                        </tr>
-                        <tr>
-                          <th scope="row" dataname={data.Desayuno[2].alimento}>{data.Desayuno[2].alimento}</th>
-                          <td data-name={data.Desayuno[2].precio}>${data.Desayuno[2].precio}</td>
-                          <td><Button /></td>
-                        </tr> 
-                        <tr>
-                          <th scope="row" dataname={data.Desayuno[3].alimento}>{data.Desayuno[3].alimento}</th>
-                          <td data-name={data.Desayuno[3].precio}>${data.Desayuno[3].precio}</td>
-                          <td><Button /></td>
-                        </tr>
+                        )
+                      })}
                      </tbody>
                     </table>
               </div>
